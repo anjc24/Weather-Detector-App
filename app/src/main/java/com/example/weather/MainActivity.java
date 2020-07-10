@@ -105,8 +105,6 @@ public class MainActivity extends AppCompatActivity {
                 String feels = obj.getString("feels_like");
                 String tempmin = obj.getString("temp_min");
                 String tempmax = obj.getString("temp_max");
-                String sea = obj.getString("sea_level");
-                String ground = obj.getString("grnd_level");
                 String pressure = obj.getString("pressure");
                 String humidity = obj.getString("humidity");
                 Log.i("temperatureifo",temp);
@@ -116,8 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 message+="Max Temperature : " + tempmax + " °C" + "\r\n";
                 message+="Humidity : " + humidity + " %" + "\r\n";
                 message+="Pressure : " + pressure + " mbar" + "\r\n";
-                message+="Sea Level : " + sea + "ft" + "\r\n";
-                message+="Ground Level : " + ground + " ft" + "\r\n";
+
                 if(!message.equals("")){
                     resultTextView.setText(message);
                 }else{
