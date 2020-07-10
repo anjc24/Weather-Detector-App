@@ -111,13 +111,13 @@ public class MainActivity extends AppCompatActivity {
                 String humidity = obj.getString("humidity");
                 Log.i("temperatureifo",temp);
                 message+="Temperature : " + temp + " °C" + "\r\n";
-                message+="Feels Like : " + feels + " %" + "\r\n";
-                message+="Min Temperature : " + tempmin + " %" + "\r\n";
-                message+="Max Temperature : " + tempmax + " %" + "\r\n";
+                message+="Feels Like : " + feels + " °C" + "\r\n";
+                message+="Min Temperature : " + tempmin + " °C" + "\r\n";
+                message+="Max Temperature : " + tempmax + " °C" + "\r\n";
                 message+="Humidity : " + humidity + " %" + "\r\n";
                 message+="Pressure : " + pressure + " mbar" + "\r\n";
-                message+="Sea Level : " + sea + " %" + "\r\n";
-                message+="Ground Level : " + ground + " %" + "\r\n";
+                message+="Sea Level : " + sea + "ft" + "\r\n";
+                message+="Ground Level : " + ground + " ft" + "\r\n";
                 if(!message.equals("")){
                     resultTextView.setText(message);
                 }else{
